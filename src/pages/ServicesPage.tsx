@@ -39,7 +39,7 @@ export default function ServicesPage() {
     },
     {
       title: "Profesjonalna modyfikacja ECU",
-      description: "Zmiana parametrów silnika (sterownik Delphi DCM 7.1A), która zapewnia lepszą moc, moment obrotowy oraz płynność pracy silnika."
+      description: "Zmiana parametrów silnika (sterownikami Bosch, Siemens, Delphi, Denso, i wieloma innymi), która zapewnia lepszą moc, moment obrotowy oraz płynność pracy silnika."
     },
     {
       title: "Modyfikacja skrzyń biegów automatycznych",
