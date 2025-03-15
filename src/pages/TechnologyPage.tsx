@@ -44,14 +44,14 @@ export default function TechnologyPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div className="aspect-video">
             <img
-              src="/files/Technologia2.jpg"
+              src="https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/Technologia2.jpg"
               alt="Technologia 1"
               className="w-full h-full object-cover rounded-lg"
             />
           </div>
           <div className="aspect-video">
             <img
-              src="/files/Technologia.jpg"
+              src="https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/Technologia.jpg"
               alt="Technologia 2"
               className="w-full h-full object-cover rounded-lg"
             />
