@@ -14,7 +14,7 @@ export default function Footer() {
           <div>
             <Link to="/" onClick={scrollToTop}>
               <img 
-                src="/LogoGiantMotorsport.png" 
+                src="https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/LogoGMS1.png" 
                 alt="Giant Motorsport Logo" 
                 className="h-12 mb-4"
               />
