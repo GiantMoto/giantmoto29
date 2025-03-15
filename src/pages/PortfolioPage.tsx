@@ -48,13 +48,13 @@ export default function PortfolioPage() {
 
   const results = [
     {
-      carImage: "files/AudiQ5Quatro.jpg",
+      carImage: "./files/AudiQ5Quatro.jpg",
       graphImage: "files/AudiQ5QuatroPomiary.jpg",
       caption: "Audi Q5 Quattro +24KM(14%) +30NM(8%)"
     },
     {
-      carImage: "files/BMW.jpg",
-      graphImage: "files/BMWPomiary.jpg",
+      carImage: "/files/BMW.jpg",
+      graphImage: "../files/BMWPomiary.jpg",
       caption: "BMW 520d E60 +47KM(30%) +94NM(30%)"
     },
     {
