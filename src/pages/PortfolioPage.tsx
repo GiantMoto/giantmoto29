@@ -71,19 +71,19 @@ export default function PortfolioPage() {
 
   const modifiedCars = [
     {
-      image: "files/FordFiesta1.5TDCI.jpg",
+      image: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/FordFiesta1.5TDCI.jpg",
       caption: "Ford Fiesta 1.5Tdci 2016r - DPF OFF"
     },
     {
-      image: "files/CitroenJumper2.0.jpg",
+      image: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/CitroenJumper2.0.jpg",
       caption: "Citroen Jumper 2.0 HDI 163KM 2019r - SCR Adblue OFF"
     },
     {
-      image: "files/OpelCombo1.3.jpg",
+      image: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/OpelCombo1.3.jpg",
       caption: "Opel Combo 1.3 CDTi (Magneti Marelli MJD 8F3.D4) - EGR OFF"
     },
     {
-      image: "files/AudiQ5.jpg",
+      image: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/AudiQ5.jpg",
       caption: "Audi Q5 2.0 TDI - modyfikacja skrzyni DSG"
     },
     {
