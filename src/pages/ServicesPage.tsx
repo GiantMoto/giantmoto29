@@ -48,6 +48,10 @@ export default function ServicesPage() {
     {
       title: "Zwiększenie ciśnienia oleju (Grupa VAG)",
       description: "Modyfikacja układu hydraulicznego skrzyni biegów, która poprawia reakcję na zmiany biegów, zwiększa trwałość elementów hydraulicznych oraz wydajność pracy skrzyni, szczególnie w pojazdach o większej mocy."
+    },
+    {
+      title: "Wyprogramowanie EGR",
+      description: "Usunięcie recyrkulacji spalin, które eliminuje problem z zapychaniem silnika, poprawia jego trwałość, osiągi i płynność pracy"
     }
   ];
 
