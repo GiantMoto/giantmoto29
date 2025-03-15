@@ -6,7 +6,7 @@ export default function TechnologyPage() {
   const features = [
     "Sprzęt Diagnostyczny z dostępem do bramki SGW całej grupy FCA (Fiat, Lancia, Alfa Romeo, Abarth, Jeep, Maserati, Chrysler, Dodge, RAM i SRT)",
     "Hamownia drogowa Dyno Pro",
-    "Sterownik Delphi DCM 6.2V"
+    "Sterowniki Bosch, Siemens, Delphi, Denso i wiele innych"
   ];
 
   return (
