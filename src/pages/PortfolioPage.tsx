@@ -48,23 +48,23 @@ export default function PortfolioPage() {
 
   const results = [
     {
-      carImage: "./files/AudiQ5Quatro.jpg",
-      graphImage: "files/AudiQ5QuatroPomiary.jpg",
+      carImage: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/AudiQ5Quatro.jpg",
+      graphImage: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/AudiQ5QuatroPomiary.jpg",
       caption: "Audi Q5 Quattro +24KM(14%) +30NM(8%)"
     },
     {
-      carImage: "/files/BMW.jpg",
-      graphImage: "../files/BMWPomiary.jpg",
+      carImage: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/BMW.jpg",
+      graphImage: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/BMWPomiary.jpg",
       caption: "BMW 520d E60 +47KM(30%) +94NM(30%)"
     },
     {
-      carImage: "files/KiaSportage.jpg",
-      graphImage: "files/KiaSportagePomiary.jpg",
+      carImage: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/KiaSportage.jpg",
+      graphImage: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/KiaSportagePomiary.jpg",
       caption: "Kia Sportage +40KM (38%) +83NM (33%)"
     },
     {
-      carImage: "files/Volkswagen.jpg",
-      graphImage: "files/VolkswagenPomiary.jpg",
+      carImage: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/Volkswagen.jpg",
+      graphImage: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/VolkswagenPomiary.jpg",
       caption: "Volkswagen T6 2.0BITDI +51KM (27%) +34NM(7%)"
     }
   ];
@@ -87,15 +87,15 @@ export default function PortfolioPage() {
       caption: "Audi Q5 2.0 TDI - modyfikacja skrzyni DSG"
     },
     {
-      image: "files/PeugeotPartner1.5.png",
+      image: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/PeugeotPartner1.5.png",
       caption: "Peugeot Partner 1.5 Blue HDI 2020r. - ADBLUE OFF"
     },
     {
-      image: "files/SeatLeon2.0TDI.png",
+      image: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/SeatLeon2.0TDI.png",
       caption: "Seat Leon 2.0 TDI Cupa 184km - DPR, EGR OFF"
     },
     {
-      image: "files/FiatDucato2.3.png",
+      image: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/FiatDucato2.3.png",
       caption: "Fiat Ducato 2.3 140 - ADBLUE OFF"
     }
   ];
