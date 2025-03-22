@@ -11,6 +11,23 @@
   </head>
   <body>
     <div id="root"></div>
+    <div style="width: 0; height: 0;" id="VG_OVERLAY_CONTAINER"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      (function() {
+        window.VG_CONFIG = {
+          ID: "d7gl58kkhm6ex4oc",
+          region: 'eu',
+          render: 'bottom-right',
+          stylesheets: [
+            "https://vg-bunny-cdn.b-cdn.net/vg_live_build/styles.css",
+          ],
+        }
+        var VG_SCRIPT = document.createElement("script");
+        VG_SCRIPT.src = "https://vg-bunny-cdn.b-cdn.net/vg_live_build/vg_bundle.js";
+        VG_SCRIPT.defer = true;
+        document.body.appendChild(VG_SCRIPT);
+      })()
+    </script>
   </body>
 </html>

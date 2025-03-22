@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, Facebook } from 'lucide-react';
+import { Menu, X, Facebook, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Navigation() {
@@ -9,6 +9,7 @@ export default function Navigation() {
     { path: '/uslugi', text: 'Usługi' },
     { path: '/technologia', text: 'Technologia' },
     { path: '/portfolio', text: 'Portfolio' },
+    { path: '/blog', text: 'Blog' },
     { path: '/kontakt', text: 'Kontakt' }
   ];
 
@@ -39,14 +40,24 @@ export default function Navigation() {
                 {item.text}
               </Link>
             ))}
-            <a
-              href="https://www.facebook.com/profile.php?id=100076437766391"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-red-600 hover:text-red-400 transition-colors"
-            >
-              <Facebook className="w-6 h-6" />
-            </a>
+            <div className="flex items-center space-x-4">
+              <a
+                href="https://www.facebook.com/profile.php?id=100076437766391"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-red-600 hover:text-red-400 transition-colors"
+              >
+                <Facebook className="w-6 h-6" />
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=%2B48510176564&app=facebook&entry_point=page_cta&fbclid=IwZXh0bgNhZW0CMTAAAR0rq72jW0kVafe8SVp3vOhmyWE1_DCeJ0M7tCo9anCEJV4MqVgNk5CjBpY_aem_fw6IJsQ9y_in8DPcTtlD_g"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-red-600 hover:text-red-400 transition-colors"
+              >
+                <MessageCircle className="w-6 h-6" />
+              </a>
+            </div>
           </div>
           
           <button

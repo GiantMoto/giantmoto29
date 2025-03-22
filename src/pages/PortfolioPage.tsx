@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import GoogleReviews from '../components/GoogleReviews';
+import GoogleMap from '../components/GoogleMap';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -177,6 +179,9 @@ export default function PortfolioPage() {
           </Link>
         </div>
       </div>
+
+      <GoogleReviews />
+      <GoogleMap />
 
       {selectedImage && (
         <div 

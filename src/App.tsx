@@ -6,6 +6,7 @@ import ServicesPage from './pages/ServicesPage';
 import PortfolioPage from './pages/PortfolioPage';
 import ContactPage from './pages/ContactPage';
 import TechnologyPage from './pages/TechnologyPage';
+import BlogPage from './pages/BlogPage';
 import TermsPage from './pages/TermsPage';
 import PrivacyPage from './pages/PrivacyPage';
 import CookiesPage from './pages/CookiesPage';
@@ -22,6 +23,7 @@ function App() {
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/kontakt" element={<ContactPage />} />
           <Route path="/technologia" element={<TechnologyPage />} />
+          <Route path="/blog" element={<BlogPage />} />
           <Route path="/regulamin" element={<TermsPage />} />
           <Route path="/polityka-prywatnosci" element={<PrivacyPage />} />
           <Route path="/polityka-cookies" element={<CookiesPage />} />

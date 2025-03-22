@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Facebook } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
@@ -46,6 +46,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/blog" onClick={scrollToTop} className="text-gray-400 hover:text-red-500 transition-colors">
+                  Blog
+                </Link>
+              </li>
+              <li>
                 <Link to="/kontakt" onClick={scrollToTop} className="text-gray-400 hover:text-red-500 transition-colors">
                   Kontakt
                 </Link>
@@ -58,7 +63,6 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link to="/regulamin" onClick={scrollToTop} className="text-gray-400 hover:text-red-500 transition-colors">
-                
                   Regulamin
                 </Link>
               </li>
@@ -105,6 +109,17 @@ export default function Footer() {
                 >
                   <Facebook className="w-5 h-5" />
                   <span>Znajdź nas na Facebooku</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://api.whatsapp.com/send?phone=%2B48510176564&app=facebook&entry_point=page_cta&fbclid=IwZXh0bgNhZW0CMTAAAR0rq72jW0kVafe8SVp3vOhmyWE1_DCeJ0M7tCo9anCEJV4MqVgNk5CjBpY_aem_fw6IJsQ9y_in8DPcTtlD_g"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-600 hover:text-red-400 transition-colors inline-flex items-center space-x-2"
+                >
+                  <MessageCircle className="w-5 h-5" />
+                  <span>Napisz na WhatsApp</span>
                 </a>
               </li>
             </ul>
