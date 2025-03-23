@@ -6,6 +6,7 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
+    { path: '/o-nas', text: 'O nas' },
     { path: '/uslugi', text: 'Usługi' },
     { path: '/technologia', text: 'Technologia' },
     { path: '/portfolio', text: 'Portfolio' },
@@ -35,7 +36,7 @@ export default function Navigation() {
                 key={item.text}
                 to={item.path}
                 onClick={scrollToTop}
-                className="text-gray-400 hover:text-red-500 transition-colors hover-underline"
+                className="text-gray-400 hover:text-red-500 transition-colors hover-underline uppercase tracking-wide text-sm"
               >
                 {item.text}
               </Link>
@@ -77,7 +78,7 @@ export default function Navigation() {
               <Link
                 key={item.text}
                 to={item.path}
-                className="block py-2 text-gray-400 hover:text-red-500 transition-colors"
+                className="block py-2 text-gray-400 hover:text-red-500 transition-colors uppercase tracking-wide text-sm"
                 onClick={() => {
                   setIsOpen(false);
                   scrollToTop();

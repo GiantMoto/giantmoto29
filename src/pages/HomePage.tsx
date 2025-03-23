@@ -30,20 +30,25 @@ export default function HomePage() {
       <Hero />
       <Services />
       
-      {/* Call to Action Buttons */}
       <div className="bg-[#0A0A0A] py-12">
         <div className="container mx-auto px-4 text-center">
           <h3 className="text-xl text-gray-300 mb-6">Zobacz więcej, skontaktuj się</h3>
           <div className="flex flex-wrap justify-center gap-4">
             <Link 
+              to="/o-nas" 
+              className="inline-block bg-red-600 text-white px-8 py-3 rounded-sm hover:bg-red-700 transition-all duration-300 shadow-[0_0_20px_rgba(239,68,68,0.5)] hover:shadow-[0_0_30px_rgba(239,68,68,0.8)] transform hover:scale-105 uppercase tracking-wide"
+            >
+              O nas
+            </Link>
+            <Link 
               to="/uslugi" 
-              className="inline-block bg-red-600 text-white px-8 py-3 rounded-sm hover:bg-red-700 transition-all duration-300 shadow-[0_0_20px_rgba(239,68,68,0.5)] hover:shadow-[0_0_30px_rgba(239,68,68,0.8)] transform hover:scale-105"
+              className="inline-block bg-red-600 text-white px-8 py-3 rounded-sm hover:bg-red-700 transition-all duration-300 shadow-[0_0_20px_rgba(239,68,68,0.5)] hover:shadow-[0_0_30px_rgba(239,68,68,0.8)] transform hover:scale-105 uppercase tracking-wide"
             >
               Więcej o usługach
             </Link>
             <Link 
               to="/kontakt" 
-              className="inline-block bg-red-600 text-white px-8 py-3 rounded-sm hover:bg-red-700 transition-all duration-300 shadow-[0_0_20px_rgba(239,68,68,0.5)] hover:shadow-[0_0_30px_rgba(239,68,68,0.8)] transform hover:scale-105"
+              className="inline-block bg-red-600 text-white px-8 py-3 rounded-sm hover:bg-red-700 transition-all duration-300 shadow-[0_0_20px_rgba(239,68,68,0.5)] hover:shadow-[0_0_30px_rgba(239,68,68,0.8)] transform hover:scale-105 uppercase tracking-wide"
             >
               Kontakt
             </Link>
@@ -51,21 +56,20 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Blog Post Section */}
       <div className="bg-[#0A0A0A] py-16">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-center gap-4 mb-12">
-            <h2 className="text-3xl text-white text-glow">Aktualności</h2>
-            <p className="text-gray-400">
-              Nasz najnowszy post z
-              <Link 
-                to="/blog" 
-                className="ml-2 inline-block bg-red-600 text-white px-4 py-1 rounded-sm hover:bg-red-700 transition-all duration-300"
-              >
-                /blog
-              </Link>
-            </p>
-          </div>
+          <h2 className="text-4xl font-bold text-center text-white mb-4 text-glow uppercase tracking-wide gradient-underline">
+            Aktualności
+          </h2>
+          <p className="text-gray-400 text-center mb-12">
+            Nasz najnowszy post z
+            <Link 
+              to="/blog" 
+              className="ml-2 inline-block bg-red-600 text-white px-4 py-1 rounded-sm hover:bg-red-700 transition-all duration-300 uppercase tracking-wide"
+            >
+              /blog
+            </Link>
+          </p>
           
           <div className="bg-[#111111] p-8 rounded-lg border border-red-600/20 max-w-5xl mx-auto">
             <h3 className="text-2xl font-bold text-white mb-6">
@@ -125,7 +129,8 @@ export default function HomePage() {
 
               <p>
                 Nie używamy gotowych map – każde strojenie to precyzyjna i indywidualna modyfikacja! 
-                Przed i po tuningu przeprowadzamy pełną diagnostykę komputerową, aby zapewnić bezpieczeństwo 
+                Przed i po tuningu przeprowadzamy pełną diagnostykę komputerową, aby zapewnić bezp
+ieczeństwo 
                 i maksymalną efektywność zmian.
               </p>
 

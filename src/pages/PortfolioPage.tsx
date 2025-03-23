@@ -103,9 +103,9 @@ export default function PortfolioPage() {
   ];
 
   return (
-    <div className="bg-[#0A0A0A] pt-16">
+    <div className="bg-[#0A0A0A] pt-24">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-center text-white mb-12 text-glow">Portfolio</h1>
+        <h1 className="text-4xl font-bold text-center text-white mb-12 text-glow uppercase tracking-wide">Portfolio</h1>
         <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
           Poznaj nasze realizacje i przekonaj się o skuteczności naszych usług. Każdy projekt to historia sukcesu i zadowolenia klienta.
         </p>
@@ -167,42 +167,43 @@ export default function PortfolioPage() {
           </button>
         </div>
 
+        <GoogleReviews />
+
         <div className="text-center mb-12">
           <p className="text-xl text-gray-300 mb-6">
             Skontaktuj się i przeprowadź zmianę na swoim samochodzie!
           </p>
           <Link
             to="/kontakt"
-            className="inline-block bg-red-600 text-white px-8 py-3 rounded-sm hover:bg-red-700 transition-all duration-300 shadow-[0_0_20px_rgba(239,68,68,0.5)] hover:shadow-[0_0_30px_rgba(239,68,68,0.8)] transform hover:scale-105"
+            className="inline-block bg-red-600 text-white px-8 py-3 rounded-sm hover:bg-red-700 transition-all duration-300 shadow-[0_0_20px_rgba(239,68,68,0.5)] hover:shadow-[0_0_30px_rgba(239,68,68,0.8)] transform hover:scale-105 uppercase tracking-wide"
           >
             Kontakt
           </Link>
         </div>
-      </div>
 
-      <GoogleReviews />
-      <GoogleMap />
+        <GoogleMap />
 
-      {selectedImage && (
-        <div 
-          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
-          onClick={() => setSelectedImage(null)}
-        >
-          <div className="relative max-w-4xl w-full">
-            <img 
-              src={selectedImage} 
-              alt="Powiększone zdjęcie" 
-              className="w-full h-auto"
-            />
-            <button 
-              onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 text-white hover:text-red-500"
-            >
-              ✕
-            </button>
+        {selectedImage && (
+          <div 
+            className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+            onClick={() => setSelectedImage(null)}
+          >
+            <div className="relative max-w-4xl w-full">
+              <img 
+                src={selectedImage} 
+                alt="Powiększone zdjęcie" 
+                className="w-full h-auto"
+              />
+              <button 
+                onClick={() => setSelectedImage(null)}
+                className="absolute top-4 right-4 text-white hover:text-red-500"
+              >
+                ✕
+              </button>
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Search, Mail, Phone, MapPin, Facebook, Gauge, Wrench, Zap, Fuel, MapPinned } from 'lucide-react';
+import { Search, Star } from 'lucide-react';
 
 interface BlogPost {
   id: string;
@@ -12,6 +11,7 @@ interface BlogPost {
   graphImage: string;
   slug: string;
   content: string;
+  features: string[];
 }
 
 const blogPosts: BlogPost[] = [
@@ -26,7 +26,13 @@ const blogPosts: BlogPost[] = [
     slug: 'chiptuning-opel-astra-h',
     content: `Czy Twój Opel Astra H 1.3 CDTI 90KM wydaje się nieco ospały? Marzysz o dynamiczniejszej jeździe, 
     lepszej elastyczności silnika i niższym spalaniu? Mamy dla Ciebie idealne rozwiązanie – profesjonalny 
-    chiptuning w Giant Motorsport!...`
+    chiptuning w Giant Motorsport!`,
+    features: [
+      'Więcej mocy i momentu obrotowego – auto staje się bardziej żwawe i dynamiczne',
+      'Lepsza reakcja na gaz – płynniejsza i bardziej responsywna jazda',
+      'Optymalizacja spalania – przy rozsądnej jeździe możesz cieszyć się niższym zużyciem paliwa',
+      'Bezpieczne, indywidualne strojenie ECU – każda modyfikacja jest dopasowana do kondycji Twojego silnika'
+    ]
   }
 ];
 
@@ -50,7 +56,6 @@ export default function BlogPage() {
             ← Wróć do listy
           </button>
           
-          {/* Full blog post content */}
           <div className="bg-[#111111] p-8 rounded-lg border border-red-600/20 max-w-5xl mx-auto">
             <h1 className="text-3xl font-bold text-white mb-4">{selectedPost.title}</h1>
             <p className="text-red-600 mb-6">{new Date(selectedPost.date).toLocaleDateString('pl-PL')}</p>
@@ -70,8 +75,37 @@ export default function BlogPage() {
               />
             </div>
             
-            <div className="text-gray-300 space-y-4">
+            <div className="text-gray-300 space-y-6">
               <p>{selectedPost.content}</p>
+
+              <div className="space-y-2">
+                <h4 className="text-white font-semibold">Co zyskasz dzięki naszej modyfikacji?</h4>
+                <ul className="space-y-2">
+                  {selectedPost.features.map((feature, index) => (
+                    <li key={index} className="flex items-center space-x-2">
+                      <Star className="text-red-600 w-5 h-5" />
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="text-white font-semibold mb-2">Efekty chiptuningu dla Opel Astra H 1.3 CDTI:</h4>
+                <p>Seryjna moc: 90 KM / 200 Nm</p>
+                <p>Po modyfikacji: 105 KM / 238 Nm*</p>
+                <p className="text-sm italic">(*dokładne wartości zależą od stanu technicznego pojazdu)</p>
+              </div>
+
+              <p>
+                Nie używamy gotowych map – każde strojenie to precyzyjna i indywidualna modyfikacja! 
+                Przed i po tuningu przeprowadzamy pełną diagnostykę komputerową, aby zapewnić bezpieczeństwo 
+                i maksymalną efektywność zmian.
+              </p>
+
+              <div className="text-center text-xl font-bold text-white">
+                Giant Motorsport – Moc, Jakość i Bezpieczeństwo Bez Kompromisów!
+              </div>
             </div>
           </div>
         </div>
@@ -84,7 +118,6 @@ export default function BlogPage() {
       <div className="container mx-auto px-4 py-12">
         <h1 className="text-3xl font-bold text-center text-white mb-12">Blog</h1>
 
-        {/* Search Bar */}
         <div className="max-w-2xl mx-auto mb-12">
           <div className="relative">
             <input
@@ -98,7 +131,6 @@ export default function BlogPage() {
           </div>
         </div>
 
-        {/* Blog Posts */}
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-white mb-6">Najnowsze posty</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
