@@ -24,7 +24,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <Link to="/" onClick={scrollToTop}>
             <img 
-              src="https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/IKONA.png" 
+              src="https://raw.githubusercontent.com/GiantMoto/zdjecia/main/IKONA.png" 
               alt="Giant Motorsport Logo" 
               className="h-12"
             />
