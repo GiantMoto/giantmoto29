@@ -59,7 +59,7 @@ export default function ServicesPage() {
     <div className="bg-[#0A0A0A] pt-16">
       <div className="relative w-full h-[300px] mb-12">
         <img 
-          src="https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/BGGiantMotorSport.png"
+          src="https://raw.githubusercontent.com/GiantMoto/zdjecia/main/BGGiantMotorSport.png"
           alt="Giant Motorsport Banner"
           className="w-full h-full object-cover"
         />
