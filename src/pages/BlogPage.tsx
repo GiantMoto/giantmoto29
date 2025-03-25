@@ -20,9 +20,9 @@ const blogPosts: BlogPost[] = [
     title: 'Chiptuning Opel Astra H 1.3 CDTI – Więcej Mocy, Mniej Spalania!',
     description: 'Odkryj, jak zwiększyliśmy moc i moment obrotowy w Oplu Astra H, jednocześnie optymalizując zużycie paliwa.',
     date: '2025-03-22',
-    image: 'https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/OpelAstra.jpg',
-    carImage: 'https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/OpelAstra.jpg',
-    graphImage: 'https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/OpelAstraPomiary.jpg',
+    image: 'https://raw.githubusercontent.com/GiantMoto/zdjecia/main/OpelAstra.jpg',
+    carImage: 'https://raw.githubusercontent.com/GiantMoto/zdjecia/main/OpelAstra.jpg',
+    graphImage: 'https://raw.githubusercontent.com/GiantMoto/zdjecia/main/OpelAstraPomiary.jpg',
     slug: 'chiptuning-opel-astra-h',
     content: `Czy Twój Opel Astra H 1.3 CDTI 90KM wydaje się nieco ospały? Marzysz o dynamiczniejszej jeździe, 
     lepszej elastyczności silnika i niższym spalaniu? Mamy dla Ciebie idealne rozwiązanie – profesjonalny 
