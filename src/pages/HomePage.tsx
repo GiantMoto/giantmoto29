@@ -78,16 +78,16 @@ export default function HomePage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <img
-                src="https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/OpelAstra.jpg"
+                src="https://raw.githubusercontent.com/GiantMoto/zdjecia/main/OpelAstra.jpg"
                 alt="Opel Astra H"
                 className="w-full h-64 object-cover rounded-lg cursor-pointer"
-                onClick={() => setSelectedImage("https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/OpelAstra.jpg")}
+                onClick={() => setSelectedImage("https://raw.githubusercontent.com/GiantMoto/zdjecia/main/OpelAstra.jpg")}
               />
               <img
-                src="https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/OpelAstraPomiary.jpg"
+                src="https://raw.githubusercontent.com/GiantMoto/zdjecia/main/OpelAstraPomiary.jpg"
                 alt="Pomiary Opel Astra H"
                 className="w-full h-64 object-cover rounded-lg cursor-pointer"
-                onClick={() => setSelectedImage("https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/OpelAstraPomiary.jpg")}
+                onClick={() => setSelectedImage("https://raw.githubusercontent.com/GiantMoto/zdjecia/main/OpelAstraPomiary.jpg")}
               />
             </div>
 
