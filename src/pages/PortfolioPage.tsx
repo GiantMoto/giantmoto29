@@ -50,54 +50,54 @@ export default function PortfolioPage() {
 
   const results = [
     {
-      carImage: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/AudiQ5Quatro.jpg",
-      graphImage: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/AudiQ5QuatroPomiary.jpg",
+      carImage: "https://raw.githubusercontent.com/GiantMoto/zdjecia/main/AudiQ5Quatro.jpg",
+      graphImage: "https://raw.githubusercontent.com/GiantMoto/zdjecia/main/AudiQ5QuatroPomiary.jpg",
       caption: "Audi Q5 Quattro +24KM(14%) +30NM(8%)"
     },
     {
-      carImage: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/BMW.jpg",
-      graphImage: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/BMWPomiary.jpg",
+      carImage: "https://raw.githubusercontent.com/GiantMoto/zdjecia/main/BMW.jpg",
+      graphImage: "https://raw.githubusercontent.com/GiantMoto/zdjecia/main/BMWPomiary.jpg",
       caption: "BMW 520d E60 +47KM(30%) +94NM(30%)"
     },
     {
-      carImage: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/KiaSportage.jpg",
-      graphImage: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/KiaSportagePomiary.jpg",
+      carImage: "https://raw.githubusercontent.com/GiantMoto/zdjecia/main/KiaSportage.jpg",
+      graphImage: "https://raw.githubusercontent.com/GiantMoto/zdjecia/main/KiaSportagePomiary.jpg",
       caption: "Kia Sportage +40KM (38%) +83NM (33%)"
     },
     {
-      carImage: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/Volkswagen.jpg",
-      graphImage: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/VolkswagenPomiary.jpg",
+      carImage: "https://raw.githubusercontent.com/GiantMoto/zdjecia/main/Volkswagen.jpg",
+      graphImage: "https://raw.githubusercontent.com/GiantMoto/zdjecia/main/VolkswagenPomiary.jpg",
       caption: "Volkswagen T6 2.0BITDI +51KM (27%) +34NM(7%)"
     }
   ];
 
   const modifiedCars = [
     {
-      image: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/FordFiesta1.5TDCI.jpg",
+      image: "https://raw.githubusercontent.com/GiantMoto/zdjecia/main/FordFiesta1.5TDCI.jpg",
       caption: "Ford Fiesta 1.5Tdci 2016r - DPF OFF"
     },
     {
-      image: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/CitroenJumper2.0.jpg",
+      image: "https://raw.githubusercontent.com/GiantMoto/zdjecia/main/CitroenJumper2.0.jpg",
       caption: "Citroen Jumper 2.0 HDI 163KM 2019r - SCR Adblue OFF"
     },
     {
-      image: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/OpelCombo1.3.jpg",
+      image: "https://raw.githubusercontent.com/GiantMoto/zdjecia/main/OpelCombo1.3.jpg",
       caption: "Opel Combo 1.3 CDTi (Magneti Marelli MJD 8F3.D4) - EGR OFF"
     },
     {
-      image: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/AudiQ5.jpg",
+      image: "https://raw.githubusercontent.com/GiantMoto/zdjecia/main/AudiQ5.jpg",
       caption: "Audi Q5 2.0 TDI - modyfikacja skrzyni DSG"
     },
     {
-      image: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/PeugeotPartner1.5.png",
+      image: "https://raw.githubusercontent.com/GiantMoto/zdjecia/main/PeugeotPartner1.5.png",
       caption: "Peugeot Partner 1.5 Blue HDI 2020r. - ADBLUE OFF"
     },
     {
-      image: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/SeatLeon2.0TDI.png",
+      image: "https://raw.githubusercontent.com/GiantMoto/zdjecia/main/SeatLeon2.0TDI.png",
       caption: "Seat Leon 2.0 TDI Cupa 184km - DPR, EGR OFF"
     },
     {
-      image: "https://raw.githubusercontent.com/GiantMoto/giantmoto29/main/FiatDucato2.3.png",
+      image: "https://raw.githubusercontent.com/GiantMoto/zdjecia/main/FiatDucato2.3.png",
       caption: "Fiat Ducato 2.3 140 - ADBLUE OFF"
     }
   ];
