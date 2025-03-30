@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import GoogleReviews from '../components/GoogleReviews';
 import GoogleMap from '../components/GoogleMap';
 import 'swiper/css';
@@ -168,19 +167,6 @@ export default function PortfolioPage() {
         </div>
 
         <GoogleReviews />
-
-        <div className="text-center mb-12">
-          <p className="text-xl text-gray-300 mb-6">
-            Skontaktuj się i przeprowadź zmianę na swoim samochodzie!
-          </p>
-          <Link
-            to="/kontakt"
-            className="inline-block bg-red-600 text-white px-8 py-3 rounded-sm hover:bg-red-700 transition-all duration-300 shadow-[0_0_20px_rgba(239,68,68,0.5)] hover:shadow-[0_0_30px_rgba(239,68,68,0.8)] transform hover:scale-105 uppercase tracking-wide"
-          >
-            Kontakt
-          </Link>
-        </div>
-
         <GoogleMap />
 
         {selectedImage && (

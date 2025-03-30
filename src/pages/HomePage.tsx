@@ -58,7 +58,7 @@ export default function HomePage() {
 
       <div className="bg-[#0A0A0A] py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-white mb-4 text-glow uppercase tracking-wide gradient-underline">
+          <h2 className="text-4xl font-bold text-center text-white mb-4 text-glow uppercase tracking-wide">
             Aktualności
           </h2>
           <p className="text-gray-400 text-center mb-12">
@@ -73,19 +73,19 @@ export default function HomePage() {
           
           <div className="bg-[#111111] p-8 rounded-lg border border-red-600/20 max-w-5xl mx-auto">
             <h3 className="text-2xl font-bold text-white mb-6">
-              Chiptuning Opel Astra H 1.3 CDTI – Więcej Mocy, Mniej Spalania!
+              Oszczędzaj na Paliwie z Profesjonalnym Chiptuningiem!
             </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <img
-                src="https://raw.githubusercontent.com/GiantMoto/zdjecia/main/OpelAstra.jpg"
-                alt="Opel Astra H"
+                src="https://raw.githubusercontent.com/GiantMoto/zdjecia/main/PALIWO.png"
+                alt="Fuel Economy"
                 className="w-full h-64 object-cover rounded-lg cursor-pointer"
-                onClick={() => setSelectedImage("https://raw.githubusercontent.com/GiantMoto/zdjecia/main/OpelAstra.jpg")}
+                onClick={() => setSelectedImage("https://raw.githubusercontent.com/GiantMoto/zdjecia/main/PALIWO.png")}
               />
               <img
                 src="https://raw.githubusercontent.com/GiantMoto/zdjecia/main/OpelAstraPomiary.jpg"
-                alt="Pomiary Opel Astra H"
+                alt="Performance Graph"
                 className="w-full h-64 object-cover rounded-lg cursor-pointer"
                 onClick={() => setSelectedImage("https://raw.githubusercontent.com/GiantMoto/zdjecia/main/OpelAstraPomiary.jpg")}
               />
@@ -93,9 +93,7 @@ export default function HomePage() {
 
             <div className="text-gray-300 space-y-6">
               <p>
-                Czy Twój Opel Astra H 1.3 CDTI 90KM wydaje się nieco ospały? Marzysz o dynamiczniejszej jeździe, 
-                lepszej elastyczności silnika i niższym spalaniu? Mamy dla Ciebie idealne rozwiązanie – profesjonalny 
-                chiptuning w Giant Motorsport!
+W czasach rosnących cen paliw, każdy kierowca szuka sposobów na zmniejszenie kosztów eksploatacji swojego pojazdu. Czy wiesz, że profesjonalny chiptuning nie tylko zwiększa moc silnika, ale może też znacząco obniżyć zużycie paliwa? Jak widać na wykresie, w przypadku Opla Astry udało nam się zwiększyć moc z 90 KM do 105 KM oraz moment obrotowy z 200 Nm do 238 Nm. Co najważniejsze, silnik o większej mocy i momencie obrotowym może pracować w bardziej optymalnym zakresie obrotów, co przekłada się na mniejsze zużycie paliwa. Przy tej samej prędkości, silnik nie musi pracować na wysokich obrotach, dzięki czemu zużywa mniej paliwa.
               </p>
 
               <div className="space-y-2">
@@ -103,34 +101,26 @@ export default function HomePage() {
                 <ul className="space-y-2">
                   <li className="flex items-center space-x-2">
                     <Zap className="text-red-600 w-5 h-5" />
-                    <span>Więcej mocy i momentu obrotowego – auto staje się bardziej żwawe i dynamiczne</span>
+                    <span>Redukcja zużycia paliwa nawet o 10-15% przy normalnej jeździe</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <Gauge className="text-red-600 w-5 h-5" />
-                    <span>Lepsza reakcja na gaz – płynniejsza i bardziej responsywna jazda</span>
+                    <span>Optymalizacja krzywej momentu obrotowego dla lepszej efektywności</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <Fuel className="text-red-600 w-5 h-5" />
-                    <span>Optymalizacja spalania – przy rozsądnej jeździe możesz cieszyć się niższym zużyciem paliwa</span>
+                    <span>Płynniejsza praca silnika i lepsza responsywność</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <Wrench className="text-red-600 w-5 h-5" />
-                    <span>Bezpieczne, indywidualne strojenie ECU – każda modyfikacja jest dopasowana do kondycji Twojego silnika</span>
+                    <span>Zwiększona przyjemność z jazdy przy niższych kosztach eksploatacji</span>
                   </li>
                 </ul>
               </div>
 
-              <div>
-                <h4 className="text-white font-semibold mb-2">Efekty chiptuningu dla Opel Astra H 1.3 CDTI:</h4>
-                <p>Seryjna moc: 90 KM / 200 Nm</p>
-                <p>Po modyfikacji: 105 KM / 238 Nm*</p>
-                <p className="text-sm italic">(*dokładne wartości zależą od stanu technicznego pojazdu)</p>
-              </div>
-
               <p>
                 Nie używamy gotowych map – każde strojenie to precyzyjna i indywidualna modyfikacja! 
-                Przed i po tuningu przeprowadzamy pełną diagnostykę komputerową, aby zapewnić bezp
-ieczeństwo 
+                Przed i po tuningu przeprowadzamy pełną diagnostykę komputerową, aby zapewnić bezpieczeństwo 
                 i maksymalną efektywność zmian.
               </p>
 

@@ -10,9 +10,9 @@ export default function TechnologyPage() {
   ];
 
   return (
-    <div className="bg-[#0A0A0A] pt-16">
+    <div className="bg-[#0A0A0A] pt-24">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-center text-white mb-6 text-glow">Technologia</h1>
+        <h1 className="text-4xl font-bold text-center text-white mb-6 text-glow uppercase tracking-wide">Technologia</h1>
         <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
           Jesteśmy profesjonalistami z wieloletnim doświadczeniem oraz pasją, którzy korzystają z oryginalnego, 
           wysokiej jakości sprzętu, aby zagwarantować efekty.

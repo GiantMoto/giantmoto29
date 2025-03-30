@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, Star } from 'lucide-react';
+import { Search, Star, Zap, Gauge, Fuel, Wrench, MapPinned, Phone, Mail, Facebook } from 'lucide-react';
 
 interface BlogPost {
   id: string;
@@ -14,7 +14,45 @@ interface BlogPost {
   features: string[];
 }
 
+const ContactButton = ({ href, icon: Icon, children }: { 
+  href: string; 
+  icon: React.ElementType; 
+  children: React.ReactNode;
+}) => (
+  <a
+    href={href}
+    target={href.startsWith('http') ? '_blank' : undefined}
+    rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+    className="text-gray-400 hover:text-red-500 transition-colors inline-flex items-center space-x-2"
+  >
+    <Icon className="text-red-600 w-5 h-5" />
+    <span>{children}</span>
+  </a>
+);
+
 const blogPosts: BlogPost[] = [
+  {
+    id: '2',
+    title: 'Oszczędzaj na Paliwie z Profesjonalnym Chiptuningiem!',
+    description: 'Dowiedz się, jak modernizacja silnika może znacząco obniżyć zużycie paliwa przy jednoczesnym zwiększeniu mocy.',
+    date: '2025-03-30',
+    image: 'https://raw.githubusercontent.com/GiantMoto/zdjecia/main/PALIWO.png',
+    carImage: 'https://raw.githubusercontent.com/GiantMoto/zdjecia/main/PALIWO.png',
+    graphImage: 'https://raw.githubusercontent.com/GiantMoto/zdjecia/main/OpelAstraPomiary.jpg',
+    slug: 'oszczedzaj-na-paliwie',
+    content: `W czasach rosnących cen paliw, każdy kierowca szuka sposobów na zmniejszenie kosztów eksploatacji swojego pojazdu. 
+    Czy wiesz, że profesjonalny chiptuning nie tylko zwiększa moc silnika, ale może też znacząco obniżyć zużycie paliwa? 
+    
+    Jak widać na wykresie, w przypadku Opla Astry udało nam się zwiększyć moc z 90 KM do 105 KM oraz moment obrotowy z 200 Nm do 238 Nm. 
+    Co najważniejsze, silnik o większej mocy i momencie obrotowym może pracować w bardziej optymalnym zakresie obrotów, co przekłada się 
+    na mniejsze zużycie paliwa. Przy tej samej prędkości, silnik nie musi pracować na wysokich obrotach, dzięki czemu zużywa mniej paliwa.`,
+    features: [
+      'Redukcja zużycia paliwa nawet o 10-15% przy normalnej jeździe',
+      'Optymalizacja krzywej momentu obrotowego dla lepszej efektywności',
+      'Płynniejsza praca silnika i lepsza responsywność',
+      'Zwiększona przyjemność z jazdy przy niższych kosztach eksploatacji'
+    ]
+  },
   {
     id: '1',
     title: 'Chiptuning Opel Astra H 1.3 CDTI – Więcej Mocy, Mniej Spalania!',
@@ -47,7 +85,7 @@ export default function BlogPage() {
 
   if (selectedPost) {
     return (
-      <div className="bg-[#0A0A0A] pt-16">
+      <div className="bg-[#0A0A0A] pt-24">
         <div className="container mx-auto px-4 py-12">
           <button 
             onClick={() => setSelectedPost(null)}
@@ -90,18 +128,42 @@ export default function BlogPage() {
                 </ul>
               </div>
 
-              <div>
-                <h4 className="text-white font-semibold mb-2">Efekty chiptuningu dla Opel Astra H 1.3 CDTI:</h4>
-                <p>Seryjna moc: 90 KM / 200 Nm</p>
-                <p>Po modyfikacji: 105 KM / 238 Nm*</p>
-                <p className="text-sm italic">(*dokładne wartości zależą od stanu technicznego pojazdu)</p>
-              </div>
+              {selectedPost.id === '1' && (
+                <div>
+                  <h4 className="text-white font-semibold mb-2">Efekty chiptuningu dla Opel Astra H 1.3 CDTI:</h4>
+                  <p>Seryjna moc: 90 KM / 200 Nm</p>
+                  <p>Po modyfikacji: 105 KM / 238 Nm*</p>
+                  <p className="text-sm italic">(*dokładne wartości zależą od stanu technicznego pojazdu)</p>
+                </div>
+              )}
 
               <p>
                 Nie używamy gotowych map – każde strojenie to precyzyjna i indywidualna modyfikacja! 
                 Przed i po tuningu przeprowadzamy pełną diagnostykę komputerową, aby zapewnić bezpieczeństwo 
                 i maksymalną efektywność zmian.
               </p>
+
+              <div className="bg-[#0A0A0A] p-6 rounded-lg space-y-4">
+                <h4 className="text-white font-semibold">Zadbaj o moc i bezpieczeństwo swojego auta!</h4>
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-2">
+                    <MapPinned className="text-red-600 w-5 h-5" />
+                    <span>Zapolice, ul. Parkowa 10B, 98-161</span>
+                  </div>
+                  <ContactButton href="tel:510176564" icon={Phone}>
+                    510 176 564
+                  </ContactButton>
+                  <ContactButton href="mailto:giantmoto@o2.pl" icon={Mail}>
+                    giantmoto@o2.pl
+                  </ContactButton>
+                  <ContactButton 
+                    href="https://www.facebook.com/profile.php?id=100076437766391" 
+                    icon={Facebook}
+                  >
+                    Znajdź nas na Facebooku
+                  </ContactButton>
+                </div>
+              </div>
 
               <div className="text-center text-xl font-bold text-white">
                 Giant Motorsport – Moc, Jakość i Bezpieczeństwo Bez Kompromisów!
@@ -114,9 +176,13 @@ export default function BlogPage() {
   }
 
   return (
-    <div className="bg-[#0A0A0A] pt-16">
+    <div className="bg-[#0A0A0A] pt-24">
       <div className="container mx-auto px-4 py-12">
-        <h1 className="text-3xl font-bold text-center text-white mb-12">Blog</h1>
+        <h1 className="text-4xl font-bold text-center text-white mb-4 text-glow uppercase tracking-wide">Blog</h1>
+        <div className="w-24 h-1 bg-red-600 mx-auto mb-4"></div>
+        <p className="text-xl text-gray-300 text-center mb-12">
+          Zobacz dlaczego naprawdę warto skorzystać z naszych usług.
+        </p>
 
         <div className="max-w-2xl mx-auto mb-12">
           <div className="relative">
