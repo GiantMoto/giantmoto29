@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Strona główna -->
+  <url>
+    <loc>https://giantmoto.pl</loc>
+    <lastmod>2025-04-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Portfolio projektów -->
+  <url>
+    <loc>https://giantmoto.pl/portfolio</loc>
+    <lastmod>2025-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Usługi tuningu -->
+  <url>
+    <loc>https://giantmoto.pl/uslugi</loc>
+    <lastmod>2025-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+
+  <!-- Kontakt -->
+  <url>
+    <loc>https://giantmoto.pl/kontakt</loc>
+    <lastmod>2025-04-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+
+  <!-- Blog firmowy -->
+  <url>
+    <loc>https://giantmoto.pl/blog</loc>
+    <lastmod>2025-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Technologia i rozwiązania -->
+  <url>
+    <loc>https://giantmoto.pl/technologia</loc>
+    <lastmod>2025-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Informacje o firmie -->
+  <url>
+    <loc>https://giantmoto.pl/o-nas</loc>
+    <lastmod>2025-04-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
