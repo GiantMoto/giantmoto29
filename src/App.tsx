@@ -11,6 +11,7 @@ import BlogPage from './pages/BlogPage';
 import TermsPage from './pages/TermsPage';
 import PrivacyPage from './pages/PrivacyPage';
 import CookiesPage from './pages/CookiesPage';
+import MapaStrony from './mapa-strony'; // Zaimportuj z głównego katalogu repozytorium (mapa-strony.tsx)
 import Footer from './components/Footer';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/regulamin" element={<TermsPage />} />
           <Route path="/polityka-prywatnosci" element={<PrivacyPage />} />
           <Route path="/polityka-cookies" element={<CookiesPage />} />
+          <Route path="/mapa-strony" element={<MapaStrony />} /> {/* Nowa trasa do mapy strony */}
         </Routes>
         <Footer />
       </div>
