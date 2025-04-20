@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://giantmoto.pl/sitemap.xml
